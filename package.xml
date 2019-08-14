@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>SSTech_Productsale</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Product Sale will help to show sale product under one roof ..allows automatically add and remove of product once you will add the special price in the Products </summary>
+    <description>Product Sale will help to show sale product under one roof ..allows automatically add and remove of product once you will add the special price in the Products .It will allow to add the Sales in the top links ..which will help to </description>
+    <notes>Onsale product</notes>
+    <authors><author><name>SSTech</name><user>sandeepgulati</user><email>sandynareshg@gmail.com</email></author></authors>
+    <date>2014-05-14</date>
+    <time>15:06:44</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="SSTech_Productsale.xml" hash="382f16b65ca056f020215e652ec62a62"/></dir></target><target name="magecommunity"><dir name="SSTech"><dir name="Productsale"><dir name="Block"><file name="Layer.php" hash="a1e57b7b6a1ed1c9b2797c7ed032c851"/><file name="List.php" hash="7e0ed2dde71729f7907dbb5083ac3ca9"/><file name="View.php" hash="e5d429debb63b87f1e83605e87e55798"/></dir><dir name="Helper"><file name="Data.php" hash="c230b9140b5ee29949c3f5e553549667"/></dir><dir name="Model"><file name="Layer.php" hash="159c4654e9a85c5231d4e495c907efd6"/></dir><dir name="controllers"><file name="IndexController.php" hash="c9fbe8a6fde340dd48715ccf687f250f"/></dir><dir name="etc"><file name="adminhtml.xml" hash="3f465760684f1e079ec727f58e5420d6"/><file name="config.xml" hash="8a14162cf75a59b95469c81bc8d1767d"/><file name="system.xml" hash="3e509f2dc26ec18a349fa417cc26c12e"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="sstech"><dir name="productsale"><file name="list.phtml" hash="af7697f5b3cdbdc641171fc375f2b680"/></dir></dir></dir><dir name="layout"><dir name="sstech"><file name="productsale.xml" hash="e8897399a93d8ddb8e82f9451587c859"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

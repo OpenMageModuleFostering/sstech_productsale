@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="top.links">
+            <action method="addLink" translate="label title" module="sstech_productsale" ifconfig="sstech_productsale/general/is_enabled"><label>Sales</label><url>productsale</url><title>Sales</title><prepare>true</prepare></action>
+        </reference>
+	</default>
+    <sstech_productsale_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-left.phtml</template>
+            </action>
+        </reference>
+        <reference name="left">
+            <block type="sstech_productsale/layer" name="productsale.leftnav" after="currency" template="catalog/layer/view.phtml"/>
+        </reference>
+        <reference name="content">            
+			<block type="sstech_productsale/list" name="sale_product_list" template="sstech/productsale/list.phtml">
+				<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+					<block type="page/html_pager" name="product_list_toolbar_pager"/>
+				</block>
+			</block>
+        </reference>
+    </sstech_productsale_index_index>
+</layout>

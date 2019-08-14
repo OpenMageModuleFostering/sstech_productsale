@@ -1,0 +1,59 @@
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <sstech translate="title">
+                        <title>SSTech</title>
+                        <sort_order>200</sort_order>
+                        <children>
+                            <sstech_productsale translate="title" module="sstech_productsale">
+                                <title>Sale Product</title>
+                                <sort_order>100</sort_order>
+                                <children>
+                                    <productsale_settings>
+                                        <title>Setting for sale</title>
+                                        <sort_order>30</sort_order>
+                                    </productsale_settings>
+                                </children>
+                            </sstech_productsale>
+                        </children>
+                    </sstech>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <zextension translate="title">
+                                        <title>SSTech</title>
+                                    </zextension>
+                                    <sstech_productsale>
+                                        <title>Setting for sale</title>
+                                    </sstech_productsale>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <sstech translate="title">
+            <title>SSTech</title>
+            <sort_order>90</sort_order>
+            <children>
+                <sstech_productsale translate="title" module="sstech_productsale">
+                    <title>Product On Sale</title>
+                    <sort_order>100</sort_order>
+                    <children>
+                        <catalogsale_settings module="sstech_productsale">
+                            <title>Setting for sale</title>
+                            <sort_order>30</sort_order>
+                            <action>adminhtml/system_config/edit/section/sstech_productsale</action>
+                        </catalogsale_settings>
+                    </children>
+                </sstech_productsale>
+            </children>
+        </sstech>
+    </menu>
+</config>
